@@ -1,0 +1,44 @@
+@use "../abstracts" as a;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // margin: 3rem 1rem 5rem;
+  padding: 3rem 1rem 5rem;
+  width: 100%;
+
+  &__logo {
+    width: 6rem;
+    margin-right: 2rem;
+  }
+
+  .nav {
+    margin-left: auto;
+
+    &__item {
+      display: inline;
+
+      & a {
+        font-family: var(--ff__raleway);
+        font-weight: 400;
+        color: var(--pri__vdk-blue);
+        font-size: 0.9rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  @include a.desktop {
+    padding: 3rem 8rem 0;
+
+    .nav__item a {
+      font-size: 1rem;
+    }
+
+    &__logo {
+      width: 10rem;
+    }
+  }
+}

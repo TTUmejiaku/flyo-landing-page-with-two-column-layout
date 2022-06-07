@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aeb02cd73e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <link rel="stylesheet" href="./dist/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="./images/logo.svg" alt="logo" class="header__logo" />
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__item"><a href="#">Features</a></li>
+            <li class="nav__item"><a href="#">Team</a></li>
+            <li class="nav__item"><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <img src="./images/illustration-1.svg" alt="" class="hero__img" />
+          <div class="hero__text">
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <p>
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <div class="hero__cta-wrapper">
+              <input type="email" placeholder="Enter your email..." />
+              <button class="btn hero--btn">Get Started</button>
+              <p>Please check your email</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <img src="./images/illustration-2.svg" alt="" class="features__img" />
+          <div class="features__text">
+            <h2>Stay productive, wherever you are</h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <div class="features__link-wrapper">
+              <a href="#"> See how Fylo works </a>
+              <img src="/images/icon-arrow.svg" alt="" />
+            </div>
+            <div class="underline"></div>
+            <div class="testimonial">
+              <p class="testimonial__quote">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div class="testimonial__user">
+                <img src="./images/avatar-testimonial.jpg" alt="" />
+                <div>
+                  <h4>Kyle Burton</h4>
+                  <p>Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="banner">
+        <div class="banner__text">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <div class="banner__cta">
+          <input type="email" placeholder="email@example.com..." />
+          <button class="btn banner--btn">Get Started For Free</button>
+          <p>Please check your email</p>
+        </div>
+      </section>
+      <footer class="footer">
+        <img src="./images/logo-footer.svg" alt="" class="footer__logo" />
+        <div class="footer__address">
+          <div class="footer__phone">
+            <img src="./images/icon-phone.svg" alt="" />
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="footer__email">
+            <img src="./images/icon-email.svg" alt="" />
+            <p>example@fylo.com</p>
+          </div>
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms </a></li>
+            <li><a href="#">Privacy </a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <a href="#" class="socials__icon"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="socials__icon"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="socials__icon"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+    <div class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">TTUmejiaku</a>.
+      </p>
+    </div>
+  </body>
+</html>

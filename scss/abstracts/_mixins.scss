@@ -1,0 +1,15 @@
+// $desktop: (
+//   "medium": 700px,
+// );
+
+// @mixin desktop($size) {
+//   @media (min-width: map-get($desktop, $size)) {
+//     @content;
+//   }
+// }
+
+@mixin desktop {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
